@@ -1,0 +1,21 @@
+tmp = float(input('What is the temperature? '))
+sym = input('Are you using Farenieht(F) or Celcius(C)? ')
+print('============================================')
+if (sym == 'F'):
+  print('So the temperature is ' + str(tmp) + '℉? ')
+  answer = input('yes or no: ')
+  if answer == 'yes':
+    celsius = (tmp - 32) * 5/9
+    print('============================================')
+    print(str(tmp) + '℉ is the same as ' + str(celsius) + '℃')
+
+elif (sym == 'C'):
+  print('So the temperature is ' + str(tmp) + '℃? ')
+  answer = input('yes or no: ')
+  if answer == 'yes':
+    celsius = (tmp * 9/5) + 32
+    print('============================================')
+    print(str(tmp) + '℃ is the same as ' + str(celsius) + '℉')
+
+else: 
+  print('error: Invalid symbol')
